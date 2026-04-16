@@ -116,7 +116,7 @@
             this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
-            this.Text = "Visor de datos - CSV / Connection";
+            this.Text = "Visor de datos ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

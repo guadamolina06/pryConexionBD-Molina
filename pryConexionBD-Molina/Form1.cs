@@ -25,6 +25,9 @@ namespace pryConexionBD_Molina
 
         private void btnExaminar_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory = Application.StartupPath; // ← ajusta esto
+            openFileDialog1.Filter = "SQL Server Database|*.mdf|All Files|*.*";
+            openFileDialog1.Title = "Seleccionar Base de Datos";
             if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
 
             selectedFilePath = openFileDialog1.FileName;
@@ -183,6 +186,11 @@ namespace pryConexionBD_Molina
 
             fields.Add(current.ToString());
             return fields.ToArray();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
